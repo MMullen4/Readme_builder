@@ -1,12 +1,12 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { // function to grab a license
+function renderLicenseBadge(license) { // function to grab a license badge
   if (license === "MIT") {
-    return `![Static Badge](https//:img.shields.io/badge/License-MIT-brightgreen)`
+    return `![Static Badge](https://img.shields.io/badge/License-MIT-brightgreen)`
   } else if (license === "Apache") {
-    return `![Static Badge](https//:img.shields.io/badge/License-Apache-brightgreen)`
+    return `![Static Badge](https://img.shields.io/badge/License-Apache-brightgreen)`
   } else if (license === "GNU") {
-    return `![Static Badge](https//:img.shields.io/badge/License-GNU-brightgreen)`
+    return `![Static Badge](https://img.shields.io/badge/License-GNU-brightgreen)`
   } else if (license === "none") {
     return ("none")
   }
@@ -15,7 +15,15 @@ function renderLicenseBadge(license) { // function to grab a license
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  if (license === "MIT") {
+    return `"https://opensource.org/licenses/MIT"`
+  } else if (license === "Apache") {
+    return `"https://opensource.org/licenses/Apache-2.0"`
+  } else if (license === "GNU") {
+    return `"https://www.gnu.org/licenses/gpl-3.0"`
+  } else {
+    return "none";
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -26,9 +34,9 @@ function renderLicenseSection(license) {
   } else if (license === "Apache") {
     return "This project is licensed under the Apache license.";
   } else if (license === "GNU") {
-    return "This project is licensed under the GPL license.";
+    return "This project is licensed under the GNU license.";
   } else {
-    return "";
+    return "none";
   }
 }
 
@@ -56,6 +64,7 @@ function generateMarkdown(data) {
 
   ## License
   ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
 
   ## Contributing
   ${data.contributing}
@@ -64,7 +73,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  For any questions, please contact me at ${data.email}. You can also find more of my work at [${data.github}](XXXXXXXXXXXXXXXXXXX${data.github}/).
+  For any questions, please contact me at ${data.email}. You can also find more of my work at https://github.com/${data.github}/.
 `;
 }
 
