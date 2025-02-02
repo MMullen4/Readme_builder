@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-import inquirer from 'inquirer';
-import fs from 'fs';
-import generateMarkdown from './utils/generateMarkdown.js';
+import inquirer from 'inquirer'; // used for creating interactive command-line interfaces
+import fs from 'fs'; // file system module
+import generateMarkdown from './utils/generateMarkdown.js'; // accesses custom module
 
 // TODO: Create an array of questions for user input
 const questions = ([

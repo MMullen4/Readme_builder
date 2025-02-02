@@ -1,8 +1,8 @@
-# ReadMe Builder
-  undefined
+# README Builder
+  ![Static Badge](https://img.shields.io/badge/License-MIT-brightgreen)
 
   ## Description
-  An app to build README.md from the command line
+  program that creates a README.md file in the user's repo. 
 
   ## Table of Contents
   - [Installation](#installation)
@@ -13,20 +13,20 @@
   - [Questions](#questions)
 
   ## Installation
-  npm i
+  run npm i and then node index.js
 
   ## Usage
-  user answers the questions already!
+  user answers the prompts
 
   ## License
-  
-  
+  This project is licensed under the MIT license.
+  "https://opensource.org/licenses/MIT"
 
   ## Contributing
-  email
+  please email me
 
   ## Tests
-  try it out
+  none.  just answer the questions!
 
   ## Questions
-  For any questions, please contact me at mhmullen@icloud.com. You can also find more of my work at mmullen4.
+  For any questions, please contact me at mhmullen4@outlook.com. You can also find more of my work at https://github.com/mhmullen4/.
