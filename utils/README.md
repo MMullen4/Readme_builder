@@ -7,6 +7,7 @@
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Video](#video)
   - [License](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
@@ -17,6 +18,11 @@
 
   ## Usage
   user answers the prompts
+
+  ## Video
+  Click on walkthrough video to see a demo of the app.
+  "https://app.screencastify.com/v3/watch/lApuh2aHt8v5SlvUymAu"
+
 
   ## License
   This project is licensed under the MIT license.
